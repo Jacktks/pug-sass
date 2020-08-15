@@ -1,0 +1,19 @@
+// Footer
+mixin social-list(name)
+    li.footer__item
+        a.footer__link(href='#')= name
+footer.footer
+    .footer__logo-box
+        h3.footer__title
+            | SelfTaught
+    .footer__content
+        .footer__content--social_list
+            .footer__navigation
+                ul.footer__list
+                    +social-list('Home')
+                    +social-list('Contacts')
+                    +social-list('Policy')
+                    +social-list('Sponsors')
+        .footer__content--description
+            p.footer__copyright
+                | Copyright &copy; by Selftaught Team. You are 100% allowed to use this webpages for both personal and commercial use, but NOT to claim it as your personal design.

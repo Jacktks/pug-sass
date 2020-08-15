@@ -1,0 +1,28 @@
+// Enroll section
+section.section-enroll
+    .enroll
+        .enroll__form
+            form.form
+                div
+                    h2.heading-secondary
+                        | enroll now
+                .form__group
+                    input#name.form__input(type='text' placeholder='full name' required='')
+                    label.form__label(for='name') Full name
+                .form__group
+                    input#email.form__input(type='email' placeholder='email' required='')
+                    label.form__label(for='email') Email
+                .form__group
+                    .form__radio-group
+                        input#male.form__radio-input(type='radio' name='gender')
+                        label.form__radio-label(for='male')
+                            span.form__radio-button
+                            | Male
+                    .form__radio-group
+                        input#female.form__radio-input(type='radio' name='gender')
+                        label.form__radio-label(for='female')
+                            span.form__radio-button
+                            | Female
+                .form__group
+                    a.btn.btn--blue(href='#')
+                        | Submit &rarr;

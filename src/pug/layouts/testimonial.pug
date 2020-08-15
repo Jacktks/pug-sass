@@ -1,0 +1,60 @@
+//Section-testimonial
+
+mixin testimonial(src,alt, content1, content2, content3)
+  .testimonial
+    figure.testimonial__shape
+      img.testimonial__img(src=src alt=alt)
+      figcaption.testimonial__caption= content1
+    .testimonial__text
+      h3.heading-tertiary.u-margin-bottom-small= content2
+      p= content3
+
+
+section.section-testimonials
+    //
+      <div class="bg-video">
+      <video class="bg-video__content" autoplay muted loop>
+      <source src="./assets/images/Boulevard.mp4" type="video/mp4">
+      <source src="./assets/images/Boulevard.webm" type="video/webm">
+      Your browser is not supported
+      </video>
+      </div>
+    .u-center-text.u-margin-bottom-big
+      h2.heading-secondary
+        | testimonials
+
+    +testimonial('./assets/images/person1.jpg', 'photo1', 'Lionel Meshi', 'thank for your guide', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat tenetur officia quis quasi, temporibus neque reiciendis quaerat exercitationem quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem labore nam?')
+    +testimonial('./assets/images/person2.jpg', 'photo1', 'Hellarri Cshinson', 'thank for your guide', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat tenetur officia quis quasi, temporibus neque reiciendis quaerat exercitationem quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorem labore nam?')
+
+
+
+    //- .testimonial
+    //-   figure.testimonial__shape
+    //-     img.testimonial__img(src='./assets/images/person1.jpg' alt='photo1')
+    //-     figcaption.testimonial__caption
+    //-       | Lionel Meshi
+    //-   .testimonial__text
+    //-     h3.heading-tertiary.u-margin-bottom-small
+    //-       | thank for your guide
+    //-     p
+    //-       | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    //-       | Incidunt repellat tenetur officia quis quasi,
+    //-       | temporibus neque reiciendis quaerat exercitationem quibusdam?
+    //-       | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    //-       | Possimus dolorem labore nam?
+    //- .testimonial
+    //-   figure.testimonial__shape
+    //-     img.testimonial__img(src='./assets/images/person2.jpg' alt='photo2')
+    //-     figcaption.testimonial__caption
+    //-       | Hellarri Cshinson
+    //-   .testimonial__text
+    //-     h3.heading-tertiary.u-margin-bottom-small
+    //-       | very helpful course
+    //-     p
+    //-       | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    //-       | Incidunt repellat tenetur officia quis quasi,
+    //-       | temporibus neque reiciendis quaerat exercitationem quibusdam?
+    //-       | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    //-       | Possimus dolorem labore nam?
+    .u-center-text.u-margin-top-big.u-margin-bottom-big
+      a.btn-text(href='#') read all the testimonials &rarr;

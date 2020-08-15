@@ -1,0 +1,21 @@
+// Header
+
+mixin social_list(href, item)
+    li
+      a(href=href)=item
+header.header
+  nav.header__nav
+    .header__logo-box
+      img.header__logo(src='./assets/images/logooutline.png' alt='logo')
+    ul.header__social-list
+      +social_list('#', 'HOME')
+      +social_list('#', 'ABOUT')
+      +social_list('#', 'CONTACT')
+      +social_list('#', 'LOGIN')
+  .header__text-box
+    h3.heading-primary
+      span.heading-primary--main
+        | selftaught
+      span.heading-primary--sub
+        | is how you survive
+    a.btn.btn--white.btn--animated(href='#') See our courses

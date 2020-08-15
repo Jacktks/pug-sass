@@ -1,0 +1,14 @@
+mixin navbar-item(href, item)
+    li.navigation__item
+        a.navigation__link(href=href)=item
+.navigation
+  input#navi-toggle.navigation__checkbox(type='checkbox')
+  label.navigation__button(for='navi-toggle')
+    span.navigation__icon &nbsp;
+  .navigation__background &nbsp;
+  .navigation__nav
+    ul.navigation__list
+      +navbar-item('#', 'HOME')
+      +navbar-item('#', 'ABOUT')
+      +navbar-item('#', 'CONTACT')
+      +navbar-item('#', 'LOGIN')

@@ -1,0 +1,37 @@
+// Import base styles
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/placeholders";
+@import "./base/global";
+@import './base/typography';
+@import './base/animation';
+@import './base/base';
+@import "./base/ultilities";
+
+// Import components styles
+@import "./components/button";
+@import "./components/composition";
+@import "./components/skills-box";
+@import "./components/card";
+@import "./components/testimonial";
+@import "./components/bg-video";
+@import "./components/enroll.scss";
+@import "./components/form.scss";
+
+
+// Import layouts styles
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/navigation";
+@import "./layouts/grid";
+
+// Import pages styles
+@import "./pages/index";
+
+@import "./pages/home";
+
+
+    
+
+
+    

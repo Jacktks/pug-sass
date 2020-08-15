@@ -1,0 +1,64 @@
+mixin social-list(list)
+  li= list.hours
+  li= list.number
+  li= list.star
+
+mixin price(number)
+  p.card__price-only= number.only
+  p.card__price-value= number.prices
+  a.btn.btn--white(href='#popup')= number.btn
+
+//Section-course
+section#section-courses.section-courses
+    .u-center-text.u-margin-bottom-big
+      h2.heading-secondary
+        | our courses
+    .section-courses__row.u-margin-bottom-small
+      .card
+        .card__side.card__side--front
+          .card__picture.card__picture--1
+            // - KÍ TỰ RỖNG TRONG HTML
+          h4.card__heading
+            span.card__heading-span.card__heading-span--1
+              | Control time
+          .card__details
+            ul
+              - const one = {hours: "3 hours", number: "1000 students", star: "5 star rated"};
+              +social-list(one)
+        .card__side.card__side--back.card__side--back-1
+          .card__cta
+            .card__price-box
+              - const p1 = {only: "Only", prices: "$16", btn: "Enroll now"};
+              +price(p1)
+      .card
+        .card__side.card__side--front
+          .card__picture.card__picture--2
+          h4.card__heading
+            span.card__heading-span.card__heading-span--2
+              | make mindmap
+          .card__details
+            ul
+              - const two = {hours: "5 hours", number: "7000 students", star: "10 star rated"};
+              +social-list(two)
+        .card__side.card__side--back.card__side--back-2
+          .card__cta
+            .card__price-box
+              - const p2 = {only: "Only", prices: "$20", btn: "Enroll now"};
+              +price(p2)
+      .card
+        .card__side.card__side--front
+          .card__picture.card__picture--3
+          h4.card__heading
+            span.card__heading-span.card__heading-span--3
+              | make target
+          .card__details
+            ul
+              - const three = {hours: "5 hours", number: "10000 students", star: "15 star rated"};
+              +social-list(three)
+        .card__side.card__side--back.card__side--back-3
+          .card__cta
+            .card__price-box
+              - const p3 = {only: "Only", prices: "$25", btn: "Enroll now"};
+              +price(p3)
+    .u-center-text
+      a.btn.btn--blue(href='#') See all our courses

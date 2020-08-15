@@ -1,0 +1,36 @@
+// Section-Skills
+mixin social-skill(name,content1, content2)
+  .skill-box
+    i.skill-box__icon.fas(class=name)
+    h3.heading-tertiary.u-margin-bottom-small= content1
+    .skill-bo_text= content2
+section.section-skills
+    .section-skills__content
+      +social-skill('fa-globe-americas','glsobal skills aniv', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit, Neque, quas doloribus corporis debitis soluta atque.')
+      +social-skill('fa-book-open','google Map News', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit, Neque, quas doloribus corporis debitis soluta atque.')
+      +social-skill('fa-users','leader of your lif', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit, Neque, quas doloribus corporis debitis soluta atque.')
+      +social-skill('fa-hourglass-half','saving your times', 'Lorem ipsum dolor, sit amet consectetur adipisicing elit, Neque, quas doloribus corporis debitis soluta atque.')
+      //- .skill-box
+      //-   i.skill-box__icon.fas.fa-globe-americas
+      //-   h3.heading-tertiary.u-margin-bottom-small global skills aniv
+      //-   .skill-bo_text
+      //-     | Lorem ipsum dolor, sit amet consectetur adipisicing elit, Neque, quas
+      //-     | doloribus corporis debitis soluta atque.
+      //- .skill-box
+      //-   i.skill-box__icon.fas.fa-book-open
+      //-   h3.heading-tertiary.u-margin-bottom-small google&apos;s Map News
+      //-   .skill-bo_text
+      //-     | Lorem ipsum dolor, sit amet consectetur adipisicing elit, Neque, quas
+      //-     | doloribus corporis debitis soluta atque.
+      //- .skill-box
+      //-   i.skill-box__icon.fas.fa-users
+      //-   h3.heading-tertiary.u-margin-bottom-small leader of your lif
+      //-   .skill-bo_text
+      //-     | Lorem ipsum dolor, sit amet consectetur adipisicing elit, Neque, quas
+      //-     | doloribus corporis debitis soluta atque.
+      //- .skill-box
+      //-   i.skill-box__icon.fas.fa-hourglass-half
+      //-   h3.heading-tertiary.u-margin-bottom-small saving your times
+      //-   .skill-bo_text
+      //-     | Lorem ipsum dolor, sit amet consectetur adipisicing elit, Neque, quas
+      //-     | doloribus corporis debitis soluta atque.
